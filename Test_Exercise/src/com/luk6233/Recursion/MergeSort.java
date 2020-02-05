@@ -1,11 +1,11 @@
-package Test_Exercise.src.com.luk_d.Recursion;
+package Recursion;
 
 public class MergeSort {
     public static void main(String[] args) {
 
     }
 
-    public int [] sortArray(int[] arrayA){ // сортировка Массива который передается в функцию
+    public int[] sortArray(int[] arrayA) { // сортировка Массива который передается в функцию
         // проверяем не нулевой ли он?
         if (arrayA == null) {
             return null;
@@ -15,11 +15,11 @@ public class MergeSort {
             return arrayA; // возврат в рекурсию в строки ниже см комменты.
         }
         // копируем левую часть от начала до середины
-        int [] arrayB = new int[arrayA.length / 2];
+        int[] arrayB = new int[arrayA.length / 2];
         System.arraycopy(arrayA, 0, arrayB, 0, arrayA.length / 2);
 
         // копируем правую часть от середины до конца массива, вычитаем из длины первую часть
-        int [] arrayC = new int[arrayA.length - arrayA.length / 2];
+        int[] arrayC = new int[arrayA.length - arrayA.length / 2];
         System.arraycopy(arrayA, arrayA.length / 2, arrayC, 0, arrayA.length - arrayA.length / 2);
 
         // рекурсией закидываем поделенные обе части обратно в наш метод, он будет крутится до тех пор,
@@ -32,7 +32,7 @@ public class MergeSort {
         return mergeArray(arrayB, arrayC);
     }
 
-    public int [] mergeArray(int [] arrayA, int [] arrayB) {
+    public int[] mergeArray(int[] arrayA, int[] arrayB) {
 
         int[] arrayC = new int[arrayA.length + arrayB.length];
         int positionA = 0, positionB = 0;

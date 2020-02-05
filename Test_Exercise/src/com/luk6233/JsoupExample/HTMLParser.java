@@ -1,10 +1,11 @@
-package Test_Exercise.src.com.luk_d.JsoupExample;
-import java.io.File;
-import java.io.IOException;
+package JsoupExample;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
+
+import java.io.File;
+import java.io.IOException;
 
 /**
  * Java Program to parse/read HTML documents from File using Jsoup library.
@@ -14,7 +15,7 @@ import org.jsoup.nodes.Element;
  *
  * @author Javin Paul
  */
-public class HTMLParser{
+public class HTMLParser {
 
     public static void main(String args[]) {
 

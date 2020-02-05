@@ -1,4 +1,4 @@
-package Test_Exercise.src.com.luk_d.Graph;
+package Graph;
 
 import java.util.HashMap;
 

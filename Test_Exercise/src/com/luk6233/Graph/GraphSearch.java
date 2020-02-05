@@ -1,4 +1,4 @@
-package Test_Exercise.src.com.luk_d.Graph;
+package Graph;
 
 import java.util.*;
 
@@ -27,8 +27,7 @@ public class GraphSearch {
                     check = 1;
                     break;
                 }
-            }
-            else {
+            } else {
                 queue.addAll(Arrays.asList(graphFriend.get(temp.getName())));
                 checked.add(temp.getName());
                 temp = queue.poll();
@@ -36,7 +35,6 @@ public class GraphSearch {
         }
 
         if (check == 0) System.out.println("There are not seller");
-
 
 
     }

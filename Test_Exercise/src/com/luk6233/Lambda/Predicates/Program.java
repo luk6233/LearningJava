@@ -1,4 +1,4 @@
-package Test_Exercise.src.com.luk_d.Lambda.Predicates;
+package Lambda.Predicates;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,15 +18,15 @@ public class Program {
 //        list.stream().forEach(p -> System.out.println(p));
 //        list.stream().forEach( System.out::println );
         list.stream().
-                filter( p -> p.getAge() >= 18).
+                filter(p -> p.getAge() >= 18).
                 sorted((p1, p2) -> p1.getName().compareTo(p2.getName())).
-                map (p -> p.getName()).
+                map(p -> p.getName()).
                 forEach(System.out::println);  // ( (String name) -> System.out.println(name));
 
 
         int sum = 0;
         int count = 0;
-        for(Person x : list) {
+        for (Person x : list) {
             if (x.getAge() >= 18) {
                 sum += x.getAge();
                 count++;

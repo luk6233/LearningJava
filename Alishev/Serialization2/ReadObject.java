@@ -19,7 +19,7 @@ public class ReadObject {
                people[i] = (Person) ois.readObject();
            }*/
 
-           Person[] people = (Person[]) ois.readObject();
+            Person[] people = (Person[]) ois.readObject();
 
             System.out.println(Arrays.toString(people));
 

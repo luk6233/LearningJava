@@ -1,7 +1,8 @@
-package Test_Exercise.src.com.luk_d.MultiThreadThinking;
+package MultiThreadThinking;
 
 
-import java.util.concurrent.*;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
 public class CachedThreadPool {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Alishev.src.annotation;
+package annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
@@ -9,6 +9,8 @@ import java.lang.annotation.Target;
 @Retention(RetentionPolicy.RUNTIME)
 public @interface MethodInfo {
     String author() default "Luk";
+
     int dateOfCraation() default 2019;
+
     String purpose();
 }

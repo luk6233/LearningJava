@@ -1,4 +1,4 @@
-package Test_Exercise.src.com.luk_d.DynamicProxy;
+package DynamicProxy;
 
 public interface Person {
     public void introduce(String name);

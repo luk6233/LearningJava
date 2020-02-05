@@ -1,4 +1,4 @@
-package Alishev.src.annotation;
+package annotation;
 
 //@MethodInfo(purpose = "class")
 public class Test {

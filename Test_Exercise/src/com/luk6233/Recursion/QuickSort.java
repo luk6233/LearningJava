@@ -1,4 +1,4 @@
-package Test_Exercise.src.com.luk_d.Recursion;
+package Recursion;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -6,7 +6,7 @@ import java.util.Arrays;
 public class QuickSort {
     public static void main(String[] args) {
         ArrayList<Integer> list = new ArrayList<>(Arrays.asList(99, 1, 5, 66, 3, 6, 8));
-        for(int x : quickSort(list)) {
+        for (int x : quickSort(list)) {
             System.out.println(x);
         }
     }
@@ -20,8 +20,7 @@ public class QuickSort {
             int a = list.get(i);
             if (a <= pivot) {
                 less.add(a);
-            }
-            else greater.add(a);
+            } else greater.add(a);
         }
         ArrayList<Integer> result = new ArrayList<>(list.size());
         result.addAll(quickSort(less));

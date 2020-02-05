@@ -1,4 +1,4 @@
-package Test_Exercise.src.com.luk_d.RMI;
+package RMI;
 
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;

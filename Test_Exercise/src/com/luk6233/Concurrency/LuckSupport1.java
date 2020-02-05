@@ -1,4 +1,4 @@
-package Test_Exercise.src.com.luk_d.Concurrency;
+package Concurrency;
 
 import java.util.concurrent.locks.LockSupport;
 

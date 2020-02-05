@@ -1,7 +1,5 @@
 package SysGears.Task2;
 
-import SysGears.Task2.Crane;
-
 public class Test {
     public static void main(String[] args) {
         Crane crane = new Crane(4);

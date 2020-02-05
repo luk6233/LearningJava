@@ -1,4 +1,4 @@
-package Test_Exercise.src.com.luk_d.factorymethod;
+package factorymethod;
 
 public class LuxuryCarFactory extends CarFactory { //concrete creator
     @Override

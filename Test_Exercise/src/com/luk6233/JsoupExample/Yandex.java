@@ -1,4 +1,4 @@
-package Test_Exercise.src.com.luk_d.JsoupExample;
+package JsoupExample;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;

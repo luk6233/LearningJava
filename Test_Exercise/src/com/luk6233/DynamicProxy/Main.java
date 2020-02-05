@@ -1,4 +1,4 @@
-package Test_Exercise.src.com.luk_d.DynamicProxy;
+package DynamicProxy;
 
 import java.lang.reflect.Proxy;
 

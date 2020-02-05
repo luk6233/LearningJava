@@ -1,4 +1,4 @@
-package Test_Exercise.src.com.luk_d.Socket;
+package Socket;
 
 import java.io.*;
 import java.net.Socket;

@@ -1,15 +1,12 @@
-package Alishev.src.lambda;
+package lambda;
 
-import org.w3c.dom.ls.LSOutput;
-
-import javax.lang.model.type.ArrayType;
 import java.util.*;
 import java.util.stream.Collectors;
 
 public class TestCollection {
     public static void main(String[] args) {
         int[] array1 = new int[10];
-        List<Integer> list1  = new ArrayList<>();
+        List<Integer> list1 = new ArrayList<>();
 
         fillArray(array1);
         fillList(list1);
@@ -54,7 +51,7 @@ public class TestCollection {
         fillList(list3);
 
         int sum1 = Arrays.stream(array3).reduce((acc, b) -> acc + b).getAsInt(); //acc - по замовчуванную рівний першому єлементу массива
-                                                                                 // ітерація з другого єлемента. після кожної ітерації асс змінюється
+        // ітерація з другого єлемента. після кожної ітерації асс змінюється
         int sum2 = list3.stream().reduce((acc, b) -> acc * b).get();
 
         System.out.println(sum1 + " " + sum2);
@@ -67,7 +64,6 @@ public class TestCollection {
         Arrays.stream(array4).filter(a -> a % 2 != 0).map(a -> a * 2).forEach(System.out::println);
 
         System.out.println(Arrays.toString(array4) + "\n\n" + "set");
-
 
 
         Set<Integer> set = new HashSet<>();

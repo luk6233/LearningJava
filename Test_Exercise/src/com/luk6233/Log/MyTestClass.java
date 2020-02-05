@@ -1,4 +1,4 @@
-package Test_Exercise.src.com.luk_d.Log;
+package Log;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,7 +11,7 @@ public class MyTestClass {
 
         try {
             LOGGER.warn("Attention! Divine by zero");
-            System.out.println(12/0);
+            System.out.println(12 / 0);
         } catch (ArithmeticException x) {
 
             LOGGER.error("Error");

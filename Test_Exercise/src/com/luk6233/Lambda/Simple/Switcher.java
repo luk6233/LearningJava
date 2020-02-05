@@ -1,4 +1,4 @@
-package Test_Exercise.src.com.luk_d.Lambda.Simple;
+package Lambda.Simple;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -18,7 +18,7 @@ public class Switcher {
         System.out.println("Switch on");
 //        if (consumer != null)
 //            consumer.electricityOn();
-        for(EletricityConsumer x : listeners) {
+        for (EletricityConsumer x : listeners) {
             x.electricityOn(this);
         }
     }

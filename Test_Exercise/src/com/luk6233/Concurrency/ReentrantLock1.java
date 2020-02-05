@@ -1,10 +1,10 @@
-package Test_Exercise.src.com.luk_d.Concurrency;
+package Concurrency;
 
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
 public class ReentrantLock1 {
-    public static void main(String []args) throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException {
         Lock lock = new ReentrantLock();
         Runnable task = () -> {
             lock.lock();

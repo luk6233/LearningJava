@@ -1,4 +1,4 @@
-package Test_Exercise.src.com.luk_d.JSON;
+package JSON;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -6,8 +6,7 @@ import java.io.IOException;
 import java.io.StringWriter;
 
 public class TestJSONSerialization {
-    public static void main(String[] args) throws IOException
-    {
+    public static void main(String[] args) throws IOException {
         //создание объекта для сериализации в JSON
         Cat cat = new Cat();
         cat.name = "Murka";

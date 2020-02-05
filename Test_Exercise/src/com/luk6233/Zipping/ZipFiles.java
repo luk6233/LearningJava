@@ -1,4 +1,4 @@
-package Test_Exercise.src.com.luk_d.Zipping;
+package Zipping;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -28,6 +28,7 @@ public class ZipFiles {
 
     /**
      * This method zips the directory
+     *
      * @param dir
      * @param zipDirName
      */
@@ -38,10 +39,10 @@ public class ZipFiles {
             //create ZipOutputStream to write to the zip file
             FileOutputStream fos = new FileOutputStream(zipDirName);
             ZipOutputStream zos = new ZipOutputStream(fos);
-            for(String filePath : filesListInDir){
+            for (String filePath : filesListInDir) {
                 System.out.println("Zipping " + filePath);
                 //for ZipEntry we need to keep only relative file path, so we used substring on absolute path
-                ZipEntry ze = new ZipEntry(filePath.substring(dir.getAbsolutePath().length()+1, filePath.length()));
+                ZipEntry ze = new ZipEntry(filePath.substring(dir.getAbsolutePath().length() + 1, filePath.length()));
                 zos.putNextEntry(ze);
                 //read the file and write to ZipOutputStream
                 FileInputStream fis = new FileInputStream(filePath);
@@ -62,19 +63,21 @@ public class ZipFiles {
 
     /**
      * This method populates all the files in a directory to a List
+     *
      * @param dir
      * @throws IOException
      */
     private void populateFilesList(File dir) throws IOException {
         File[] files = dir.listFiles();
-        for(File file : files){
-            if(file.isFile()) filesListInDir.add(file.getAbsolutePath());
+        for (File file : files) {
+            if (file.isFile()) filesListInDir.add(file.getAbsolutePath());
             else populateFilesList(file);
         }
     }
 
     /**
      * This method compresses the single file to zip format
+     *
      * @param file
      * @param zipFileName
      */

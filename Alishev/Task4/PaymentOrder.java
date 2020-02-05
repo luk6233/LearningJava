@@ -39,7 +39,7 @@ public class PaymentOrder { //chromosome
         }
 
         setCredit(credit);
-   }
+    }
 
     public int[] getOrder() {
         return order;

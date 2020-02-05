@@ -1,4 +1,4 @@
-package Test_Exercise.src.com.luk_d.XML;
+package XML;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;

@@ -1,4 +1,4 @@
-package Alishev.src.collection.hashcodeequals;
+package collection.hashcodeequals;
 
 import java.util.Objects;
 

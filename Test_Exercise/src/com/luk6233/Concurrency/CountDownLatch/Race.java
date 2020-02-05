@@ -1,4 +1,4 @@
-package Test_Exercise.src.com.luk_d.Concurrency.CountDownLatch;
+package Concurrency.CountDownLatch;
 
 import java.util.concurrent.CountDownLatch;
 

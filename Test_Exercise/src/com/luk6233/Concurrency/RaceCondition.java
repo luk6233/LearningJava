@@ -1,4 +1,4 @@
-package Test_Exercise.src.com.luk_d.Concurrency;
+package Concurrency;
 
 public class RaceCondition {
     public static int value = 0;

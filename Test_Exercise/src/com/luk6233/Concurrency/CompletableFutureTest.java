@@ -1,9 +1,9 @@
-package Test_Exercise.src.com.luk_d.Concurrency;
+package Concurrency;
 
 import java.util.concurrent.CompletableFuture;
 
 public class CompletableFutureTest {
-    public static void main(String []args) throws Exception {
+    public static void main(String[] args) throws Exception {
         // CompletableFuture уже содержащий результат
         CompletableFuture<String> completed;
         completed = CompletableFuture.completedFuture("Просто значение");

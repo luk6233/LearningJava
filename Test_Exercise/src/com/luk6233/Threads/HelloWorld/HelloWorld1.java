@@ -1,14 +1,14 @@
-package Test_Exercise.src.com.luk_d.Threads.HelloWorld;
+package Threads.HelloWorld;
 
 public class HelloWorld1 {
-    public static void main(String []args) throws InterruptedException {
+    public static void main(String[] args) throws InterruptedException {
         Object lock = new Object();
         // task woit for notify by lock
         Runnable task = () -> {
-            synchronized(lock) {
+            synchronized (lock) {
                 try {
                     lock.wait();
-                } catch(InterruptedException e) {
+                } catch (InterruptedException e) {
                     System.out.println("interrupted");
                 }
             }
@@ -19,7 +19,7 @@ public class HelloWorld1 {
         taskThread.start();
         Thread.currentThread().sleep(3000);
         System.out.println("main");
-        synchronized(lock) {
+        synchronized (lock) {
             lock.notify();
         }
     }

@@ -1,4 +1,4 @@
-package Alishev.src.reflection;
+package reflection;
 
 /**
  * @author Luk

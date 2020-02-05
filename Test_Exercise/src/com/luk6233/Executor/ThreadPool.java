@@ -1,4 +1,4 @@
-package Test_Exercise.src.com.luk_d.Executor;
+package Executor;
 
 import java.util.Queue;
 import java.util.concurrent.ConcurrentLinkedDeque;
@@ -29,9 +29,9 @@ public class ThreadPool implements Executor {
 
         @Override
         public void run() {
-            while(isRunning) {
+            while (isRunning) {
                 Runnable nextTask = workQueue.poll();
-                if(nextTask != null) {
+                if (nextTask != null) {
                     nextTask.run();
                 }
 

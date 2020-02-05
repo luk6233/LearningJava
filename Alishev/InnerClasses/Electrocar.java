@@ -1,22 +1,22 @@
-package Alishev.src.InnerClasses;
+package InnerClasses;
 
 public class Electrocar {
     private int id;
     private static int number;
 
-  // вкладений нестатичний клас
+    // вкладений нестатичний клас
     private class Engine {
         public void engineStart() {
             System.out.println("Engine + " + id + " starting");
         }
     }
 
-  // статичний вкладений клас для використання ззовні
-  public static class Battery {
+    // статичний вкладений клас для використання ззовні
+    public static class Battery {
         public void charge() {
             System.out.println("Battery is charging" + number);
         }
-  }
+    }
 
     public Electrocar(int id) {
         this.id = id;

@@ -1,4 +1,4 @@
-package Alishev.src.reflection;
+package reflection;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;

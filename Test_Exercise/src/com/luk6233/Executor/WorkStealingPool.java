@@ -1,4 +1,4 @@
-package Test_Exercise.src.com.luk_d.Executor;
+package Executor;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutorService;

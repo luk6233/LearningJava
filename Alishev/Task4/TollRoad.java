@@ -1,9 +1,7 @@
 package Task4;
 
-import static java.util.Arrays.stream;
-
 public class TollRoad {
-    private static final int[] payPoints = new int[] {2, 5, 10, 8, 7, 8, 5, 9, 10, 1};
+    private static final int[] payPoints = new int[]{2, 5, 10, 8, 7, 8, 5, 9, 10, 1};
     private static final int tournamentCount = 4;
     private static final int populationCount = 500;
     private static final double mutationProbability = 1;
@@ -40,7 +38,7 @@ public class TollRoad {
         }
     }
 
-    public void createInitialPopulation () {
+    public void createInitialPopulation() {
         for (int i = 0; i < populationCount; i++) {
             population[i] = new PaymentOrder();
             PaymentOrder.createRandomOrder(population[i]);
@@ -97,7 +95,7 @@ public class TollRoad {
 
         int[] child = new int[father.length];
 
-        System.arraycopy(father, crossingPoint, child , 0, length);
+        System.arraycopy(father, crossingPoint, child, 0, length);
 
         int k = length;
         for (int i = 0; i < mother.length; i++) {
@@ -163,7 +161,7 @@ public class TollRoad {
             }
         }
 
-        return  result;
+        return result;
     }
 
     public static int minCredit(int[] payPoints) { //minimal credit for current payment order

@@ -1,4 +1,4 @@
-package Alishev.src.collection.stack;
+package collection.stack;
 
 import java.util.Stack;
 
@@ -21,7 +21,6 @@ public class Test {
         while (!stack.empty()) {
             System.out.println(stack.pop());
         }
-
 
 
     }

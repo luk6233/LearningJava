@@ -1,4 +1,4 @@
-package Test_Exercise.src.com.luk_d.factorymethod;
+package factorymethod;
 
 public class Test {
     public static void main(String[] args) {

@@ -1,10 +1,6 @@
 package Task1;
 
-import org.jsoup.select.Evaluator;
-
-import java.text.ParseException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class temperatureConvertor {
@@ -17,7 +13,7 @@ public class temperatureConvertor {
         scale.add('F');
     }
 
-    public static String convertor (String temperature) {
+    public static String convertor(String temperature) {
         char scaleChar = temperature.charAt(temperature.length() - 1);
         if (!scale.contains(scaleChar)) {
             throw new IllegalArgumentException("Wrong scale");
@@ -34,7 +30,7 @@ public class temperatureConvertor {
         int celsius;
         int fahrenheit;
         int kelvin;
-        String result ="";
+        String result = "";
 
         switch (scaleChar) {
             case 'K':
@@ -51,7 +47,7 @@ public class temperatureConvertor {
 
             case 'C':
                 kelvin = (int) Math.round(value + 273.15);
-                fahrenheit = (int) Math.round( 1.8 * value + 32);
+                fahrenheit = (int) Math.round(1.8 * value + 32);
                 result = String.format("{K: %d, F: %d}", kelvin, fahrenheit);
                 break;
 

@@ -1,7 +1,7 @@
-package Test_Exercise.src.com.luk_d.Executor;
+package Executor;
 
 public class Counter {
-    public Double count (double a) {
+    public Double count(double a) {
         for (int i = 0; i < 1000000; i++) {
             a = a + Math.tan(a);
         }

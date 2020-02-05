@@ -27,8 +27,7 @@ public class Archery {
                 arch1Prob += step1Prob;
                 arch2Prob += step2Prob;
 
-            }
-            else {
+            } else {
                 arch2Prob += step2Prob;
 
                 if (arch1Prob >= (1 - arch2Prob)) {

@@ -1,4 +1,4 @@
-package Test_Exercise.src.com.luk_d.WeakMap;
+package WeakMap;
 
 
 import java.util.Map;

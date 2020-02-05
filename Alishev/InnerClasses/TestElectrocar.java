@@ -1,4 +1,4 @@
-package Alishev.src.InnerClasses;
+package InnerClasses;
 
 public class TestElectrocar {
     public static void main(String[] args) {

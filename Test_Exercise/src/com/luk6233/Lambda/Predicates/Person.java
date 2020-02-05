@@ -1,4 +1,4 @@
-package Test_Exercise.src.com.luk_d.Lambda.Predicates;
+package Lambda.Predicates;
 
 public class Person {
     private String name;

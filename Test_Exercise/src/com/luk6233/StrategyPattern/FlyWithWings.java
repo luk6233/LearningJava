@@ -1,4 +1,4 @@
-package Test_Exercise.src.com.luk_d.StrategyPattern;
+package StrategyPattern;
 
 public class FlyWithWings implements FlyBehavior {
     @Override

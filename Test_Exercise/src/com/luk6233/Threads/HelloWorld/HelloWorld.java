@@ -1,4 +1,4 @@
-package Test_Exercise.src.com.luk_d.Threads.HelloWorld;
+package Threads.HelloWorld;
 
 public class HelloWorld {
     public static void main(String[] args) throws InterruptedException {

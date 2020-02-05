@@ -1,4 +1,4 @@
-package Test_Exercise.src.com.luk_d.Lambda.Simple;
+package Lambda.Simple;
 
 public class Program {
 
@@ -32,8 +32,6 @@ public class Program {
 
 //        switcher.addElectricityListener( sender -> Program.fire(sender));
         switcher.addElectricityListener(Program::fire);
-
-
 
 
         switcher.switchOn();

@@ -1,4 +1,4 @@
-package Test_Exercise.src.com.luk_d.factorymethod;
+package factorymethod;
 
 import java.util.ArrayList;
 import java.util.List;

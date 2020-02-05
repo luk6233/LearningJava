@@ -1,4 +1,4 @@
-package Test_Exercise.src.com.luk_d.Recursion;
+package Recursion;
 
 import java.util.Arrays;
 
@@ -14,13 +14,12 @@ public class Countdown {
         System.out.println(i);
         if (i > 0) {
             countdown(i - 1);
-        }
-        else return;
+        } else return;
     }
 
-    public static int fact (int x) {
+    public static int fact(int x) {
         if (x == 1) return 1;
-        return x * fact (x - 1);
+        return x * fact(x - 1);
     }
 
 //    public static int sum(int... x) {
@@ -40,8 +39,8 @@ public class Countdown {
         return 1 + count(Arrays.copyOfRange(x, 1, x.length));
     }
 
-    public static int max (int... x) {
-        if (x.length== 2) return x[0] > x[1] ? x[0] : x[1];
+    public static int max(int... x) {
+        if (x.length == 2) return x[0] > x[1] ? x[0] : x[1];
         int submax = max(Arrays.copyOfRange(x, 1, x.length));
         return x[0] > submax ? x[0] : submax;
 

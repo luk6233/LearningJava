@@ -1,4 +1,4 @@
-package Alishev.src.lambda;
+package lambda;
 
 interface Executable {
     int execute(int x, int y);
@@ -34,7 +34,7 @@ public class Test {
 //        z = 4;
         runner.run((x, y) -> {
 //            int z = 2;
-            int b =4;
+            int b = 4;
             return x + y + z;
         });
 

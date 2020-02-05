@@ -1,4 +1,4 @@
-package Test_Exercise.src.com.luk_d.Generic;
+package Generic;
 
 import java.util.ArrayList;
 import java.util.List;

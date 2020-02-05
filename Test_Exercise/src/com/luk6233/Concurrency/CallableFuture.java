@@ -1,10 +1,10 @@
-package Test_Exercise.src.com.luk_d.Concurrency;
+package Concurrency;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.FutureTask;
 
 public class CallableFuture {
-    public static void main(String []args) throws Exception {
+    public static void main(String[] args) throws Exception {
         Callable task = () -> {
             return "Hello, World!";
         };

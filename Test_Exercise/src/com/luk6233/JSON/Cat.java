@@ -1,4 +1,4 @@
-package Test_Exercise.src.com.luk_d.JSON;
+package JSON;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.JsonIgnore;
@@ -12,5 +12,6 @@ class Cat {
     @JsonIgnore
     public int weight;
 
-    Cat(){}
+    Cat() {
+    }
 }

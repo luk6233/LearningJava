@@ -1,4 +1,4 @@
-package Test_Exercise.src.com.luk_d.Threads;
+package Threads;
 
 public class ThreadWorks {
     public static void main(String[] args) throws InterruptedException {
@@ -54,10 +54,10 @@ public class ThreadWorks {
         Object lock = new Object();
         // task будет ждать, пока его не оповестят через lock
         Runnable task = () -> {
-            synchronized(lock) {
+            synchronized (lock) {
                 try {
                     lock.wait();
-                } catch(InterruptedException e) {
+                } catch (InterruptedException e) {
                     System.out.println("interrupted");
                 }
             }
@@ -69,7 +69,7 @@ public class ThreadWorks {
         // Ждём и после этого забираем себе лок, оповещаем и отдаём лок
         Thread.currentThread().sleep(3000);
         System.out.println("main");
-        synchronized(lock) {
+        synchronized (lock) {
             lock.notify();
         }
     }

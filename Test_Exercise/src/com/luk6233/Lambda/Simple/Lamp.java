@@ -1,4 +1,4 @@
-package Test_Exercise.src.com.luk_d.Lambda.Simple;
+package Lambda.Simple;
 
 public class Lamp implements EletricityConsumer {
 

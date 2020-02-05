@@ -1,8 +1,8 @@
-package Test_Exercise.src.com.luk_d.Concurrency;
+package Concurrency;
 
+import java.util.Random;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
-import java.util.Random;
 
 public class Safelock {
     static class Friend {
@@ -24,7 +24,7 @@ public class Safelock {
                 myLock = lock.tryLock();
                 yourLock = bower.lock.tryLock();
             } finally {
-                if (! (myLock && yourLock)) {
+                if (!(myLock && yourLock)) {
                     if (myLock) {
                         lock.unlock();
                     }
@@ -74,10 +74,11 @@ public class Safelock {
 
         public void run() {
             Random random = new Random();
-            for (;;) {
+            for (; ; ) {
                 try {
                     Thread.sleep(random.nextInt(10));
-                } catch (InterruptedException e) {}
+                } catch (InterruptedException e) {
+                }
                 bowee.bow(bower);
             }
         }

@@ -1,4 +1,4 @@
-package Test_Exercise.src.com.luk_d.Executor;
+package Executor;
 
 public class SingleThreadClient {
     public static void main(String[] args) {

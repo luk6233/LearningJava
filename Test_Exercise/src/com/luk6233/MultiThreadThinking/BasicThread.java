@@ -1,4 +1,4 @@
-package Test_Exercise.src.com.luk_d.MultiThreadThinking;
+package MultiThreadThinking;
 
 public class BasicThread {
     public static void main(String[] args) {
